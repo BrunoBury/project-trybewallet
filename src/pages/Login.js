@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { login } from '../redux/actions';
-
 import '../styles/Login.css';
 
 class Login extends React.Component {
@@ -34,7 +33,7 @@ class Login extends React.Component {
     return (
       <div className="container">
         <div className="login-box">
-          <h2>Login</h2>
+          <h2>TRYBEWALLET</h2>
           <form onSubmit={ this.handleSubmit }>
             <label htmlFor="email-input">E-mail:</label>
             <input

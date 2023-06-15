@@ -1,0 +1,33 @@
+.header-container {
+  align-items: center;
+  background: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: -4px 9px 13px rgba(5, 18, 54, 0.4);
+  display: flex;
+  height: 482px;
+  justify-content: space-between;
+  left: 121px;
+  padding: 10px;
+  position: absolute;
+  top: -97px;
+  width: 1037px;
+}
+
+.email-field {
+  border: 1px solid green;
+  color: green;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.total-field {
+  border: 1px solid green;
+  color: green;
+  padding: 5px;
+}
+
+.header-currency-field {
+  border: 1px solid green;
+  color: green;
+  padding: 5px;
+}
