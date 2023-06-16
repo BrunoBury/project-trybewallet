@@ -1,6 +1,18 @@
-.centerDiv {
+.wallet-container {
   align-items: center;
-  color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+}
+
+.header-form-container {
+  background: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px rgba(0, 255, 0, 0.4);
+  margin-bottom: 20px;
+  padding: 5px;
+  width: 90%;
+}
+
+.form-container {
+  display: flex;
 }

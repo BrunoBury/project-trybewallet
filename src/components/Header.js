@@ -9,12 +9,15 @@ class Header extends Component {
     const { email } = user;
     return (
       <div className="header-container">
-        <div className="total-field" data-testid="total-field">0</div>
-        <div
-          className="header-currency-field"
-          data-testid="header-currency-field"
-        >
-          BRL
+        <h1 className="title-wallet">TrybeWallet</h1>
+        <div className="header-info">
+          <div className="total-field" data-testid="total-field">0</div>
+          <div
+            className="header-currency-field"
+            data-testid="header-currency-field"
+          >
+            BRL
+          </div>
         </div>
         <div className="email-field" data-testid="email-field">{email}</div>
       </div>

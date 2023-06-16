@@ -1,0 +1,22 @@
+.wallet-form-container {
+  align-items: center;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.form-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+.form-field label {
+  margin-right: 10px;
+}
+
+
+.submit-button {
+  margin-top: 60px;
+}
