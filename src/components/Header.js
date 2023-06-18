@@ -5,13 +5,20 @@ import '../styles/Header.css';
 
 class Header extends Component {
   render() {
-    const { user } = this.props;
+    const { user, expenses } = this.props;
     const { email } = user;
+    console.log(expenses);
+    const expense = expenses.map((expen) => (
+      (expen.value) * (expen.exchangeRates[expen.currency].ask)
+    ));
+    const result = expense.length > 0 ? expense.reduce((acc, curr) => acc + curr) : 0;
     return (
       <div className="header-container">
         <h1 className="title-wallet">TrybeWallet</h1>
         <div className="header-info">
-          <div className="total-field" data-testid="total-field">0</div>
+          <div className="total-field" data-testid="total-field">
+            {result.toFixed(2)}
+          </div>
           <div
             className="header-currency-field"
             data-testid="header-currency-field"
@@ -27,12 +34,14 @@ class Header extends Component {
 
 const mapStateToProps = (state) => ({
   user: state.user,
+  expenses: state.wallet.expenses,
 });
 
 Header.propTypes = {
   user: PropTypes.shape({
     email: PropTypes.string,
   }).isRequired,
+  expenses: PropTypes.arrayOf(PropTypes.objectOf).isRequired,
 };
 
 export default connect(mapStateToProps)(Header);
