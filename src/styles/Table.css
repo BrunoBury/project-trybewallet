@@ -9,4 +9,12 @@
   border-radius: 5px;
   box-shadow: 0 0 2px 0.5px rgba(0, 128, 0, 0.5);
   color: white;
+  text-align: center;
+}
+
+.btn-excluir {
+  font-size: 12px;
+  height: 30px;
+  text-align: center;
+  width: 100px;
 }

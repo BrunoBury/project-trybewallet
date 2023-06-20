@@ -3,6 +3,7 @@ export const FETCH_CURRENCIES_BEGIN = 'FETCH_CURRENCIES_BEGIN';
 export const FETCH_CURRENCIES_SUCCESS = 'FETCH_CURRENCIES_SUCCESS';
 export const FETCH_CURRENCIES_FAILURE = 'FETCH_CURRENCIES_FAILURE';
 export const ADD_EXPENSE = 'ADD_EXPENSE';
+export const DELETE_EXPENSES = 'DELETE_EXPENSES';
 
 export const login = (email) => ({
   type: USER_EMAIL,
@@ -14,6 +15,7 @@ export const addExpenseAction = (expense, rates) => ({
   payload: expense,
   rates,
 });
+export const deleteExpenses = (expenses) => ({ type: DELETE_EXPENSES, expenses });
 
 export const fetchCurrenciesBegin = () => ({
   type: FETCH_CURRENCIES_BEGIN,
