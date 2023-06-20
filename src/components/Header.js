@@ -7,7 +7,6 @@ class Header extends Component {
   render() {
     const { user, expenses } = this.props;
     const { email } = user;
-    console.log(expenses);
     const expense = expenses.map((expen) => (
       (expen.value) * (expen.exchangeRates[expen.currency].ask)
     ));
