@@ -1,10 +1,12 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+**Neste projeto, o objetivo principal era demonstrar habilidades avançadas no gerenciamento de estado de aplicações React usando Redux. As competências desenvolvidas e aplicadas incluíam:**
+- Criar um store Redux
+
+- Criar reducers no Redux
+
+- Criar actions no Redux
+
+- Criar dispatchers no Redux
+
+- Conectar Redux aos componentes React
+
+- Criar actions assíncronas
